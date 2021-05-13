@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "b6f41e93-6850-4fbe-8e0a-9efbef6bbb13",
+		"name": "Payload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Index endpoints",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api/index",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ME",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api/user",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "226c6174223d3e2d33352e33393132322c226c6e67223d3e2d37312e3536373235\r\n2c2266726f6d223d3e2267773035222c226f726967696e223d3e22494d45493a33\r\n3030363531323634373433373232222c2261646472657373223d3e224c6f732054\r\n6f706163696f73203537332c20416e746f6661676173746122"
+				},
+				"url": {
+					"raw": "{{URL}}/api/payload",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"payload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payload List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api/payload",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"payload"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "*",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "admin",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "{{URL}}/oauth/token",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "CLIENT_OAUTH",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{USERNAME}}",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "http://localhost/wallet-backend/public/oauth/token",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "password_credentials",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{CLIENT_SECRET}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{CLIENT_ID}}",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "http://localhost/wallet-backend/public/oauth/authorize",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
