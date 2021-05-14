@@ -56,6 +56,10 @@ DB_DSN=mongodb+srv://_USR_:_PWD_@cluster0.7lofe.mongodb.net/_DB_?retryWrites=tru
 
 - Cambiar _DB_ por su colección o base da datos
 
+
+![image](https://user-images.githubusercontent.com/41336236/118216040-be630880-b440-11eb-84b2-2e868addf873.png)
+
+
 ### Generar las colecciones base 
 
 - `php artisan migrate`
@@ -281,6 +285,10 @@ En la carpeta `Postman` se incluyen 2 archivos para cargar el proyecto y realiza
 
 `Payload.postman_collection` usar para importar proyecto.
 `dev.postman_environment` usar para importar el entorno
+
+![image](https://user-images.githubusercontent.com/41336236/118215603-d1c1a400-b43f-11eb-80bc-b63ddd00658e.png)
+![image](https://user-images.githubusercontent.com/41336236/118215734-2107d480-b440-11eb-9c56-df2543749652.png)
+
 
 # Estructura básica de directorios
 
