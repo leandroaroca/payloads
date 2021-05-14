@@ -15,7 +15,7 @@ Route::get('/', function () {
 /*
     $user = new App\User();
     $user->password = Hash::make('admin');
-    $user->email = 'leandro.aroca.g@gmailcom';
+    $user->email = 'leandro.aroca.g@gmail.com';
     $user->name = 'leandro';
     $user->save();
 */
